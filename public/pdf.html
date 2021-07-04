@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+	<meta charset="utf-8" />
+</head>
+
+<body>
+	<noscript>Aplikácia vyžaduje zapnutý javascript.</noscript>
+	<script src="static/js/pdflegacy.js"></script>
+	<script>
+		var pdfMaker = new pdf.PdfMaker();
+		function message_receive(ev) {
+			if (ev.key != 'message') return; // ignore other keys
+			var message = ev.newValue && JSON.parse(ev.newValue);
+			if (!message) return; // ignore empty msg or msg reset
+			switch (message.command) {
+				case 'downloadInvoicePdf':
+					return pdfMaker.downloadInvoicePdf(message.data);
+			}
+		}
+		window.addEventListener('storage', message_receive);
+	</script>
+</body>
+
+</html>
