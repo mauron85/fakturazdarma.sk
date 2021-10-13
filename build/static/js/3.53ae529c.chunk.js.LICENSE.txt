@@ -16,7 +16,7 @@
 
 /*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
 
-/*! pdfmake v0.2.0, @license MIT, @link http://pdfmake.org */
+/*! pdfmake v0.2.2, @license MIT, @link http://pdfmake.org */
 
 /** @preserve
              * Counter block mode compatible with  Dr Brian Gladman fileenc.c

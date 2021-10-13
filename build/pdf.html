@@ -15,8 +15,8 @@
 			var message = ev.newValue && JSON.parse(ev.newValue);
 			if (!message) return; // ignore empty msg or msg reset
 			switch (message.command) {
-				case 'downloadInvoicePdf':
-					return pdfMaker.downloadInvoicePdf(message.data);
+				case 'downloadPdf':
+					return pdfMaker.downloadPdf(message.data);
 			}
 		}
 		window.addEventListener('storage', message_receive);
