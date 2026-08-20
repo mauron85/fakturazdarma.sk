@@ -477,3 +477,35 @@ a {
       .footer--dark .footer__link:hover {
         color: #fff;
         border-color: #fff; } }
+
+.legal {
+  padding-top: 96pt;
+}
+
+.legal__container {
+  max-width: 880px;
+}
+
+.legal h1 {
+  margin: 0 0 1em;
+  line-height: 1.25;
+  color: #111;
+  font-size: 2.074em;
+  font-weight: 400;
+}
+
+.legal h2 {
+  margin-top: 1.75em;
+}
+
+.legal address {
+  font-style: normal;
+  line-height: 1.7;
+  margin-bottom: 1.3em;
+}
+
+.legal__eyebrow {
+  color: #6c63ff;
+  font-weight: 700;
+  margin-bottom: .5em;
+}
