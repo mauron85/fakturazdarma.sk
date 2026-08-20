@@ -444,6 +444,7 @@ a {
   padding-top: 0.25rem;
   flex-wrap: wrap;
   flex-direction: column;
+  gap: .5rem;
   font-size: 0.9rem; }
   @media (min-width: 992px) {
     .footer__data {
